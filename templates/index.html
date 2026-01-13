@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ data.title }}</title>
+</head>
+<body>
+    <h1>{{ data.title }}</h1>
+
+    <p>Total users: {{ data.count }}</p>
+
+    <ul>
+        {% for user in data.users %}
+            <li>{{ user }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
