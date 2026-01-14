@@ -6,10 +6,11 @@ app = Flask(__name__)
 def home():
     data = {
         "title": "My Flask App",
-        "users": ["Alice", "Bob", "Charlie"],
-        "count": 3
+        "users": ["Alice", "Bob", "Charlie", 
+                  "Diana", "Eve"],
+        "count": 5
     }
     return render_template("index.html", data=data)
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(host="0.0.0.0", port=5000, debug=True)
